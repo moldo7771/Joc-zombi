@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Untitled-1.css" />
+    <script src="Untitled-1.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zombie Sacrifice 2D</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hud">
+    <div class="left">
+      <div>❤️ Player: <span id="playerHP">100</span></div>
+      <div>🏙️ City: <span id="cityHP">100</span></div>
+      <div>🧟 Kills: <span id="kills">0</span></div>
+    </div>
+    <div class="right">
+      <div>🔥 Shoot: LMB • Move: WASD • Sacrifice: X • Rocket: R • Sacrifica-ti prietenul pe F pentru 50% damage si 20% speed</div>
+      <div>⏱️ Wave: <span id="wave">1</span></div>
+    </div>
+  </div>
+
+  <canvas id="game" width="960" height="540"></canvas>
+
+  <div class="overlay" id="menu">
+    <div class="panel">
+      <h1>Zombie Sacrifice 2D</h1>
+      <p>Defend the city core. Survive as long as you can—or press <strong>X</strong> to sacrifice yourself and purge all zombies in a final blast.</p>
+      <button id="startBtn">Start Game</button>
+    </div>
+  </div>
+
+  <div class="overlay hidden" id="gameOver">
+    <div class="panel">
+      <h2 id="gameOverTitle">Game Over</h2>
+      <p id="gameOverMsg"></p>
+      <button id="restartBtn">Restart</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
